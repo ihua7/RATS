@@ -1,0 +1,133 @@
+<html>
+<head>
+    <title>RATS</title>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    
+    <link href="styles.css" rel="stylesheet" type="text/css">
+
+    <meta name="color:Body Font" content="#979797">
+    
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="audio">
+        <audio id="player" src="Rats, we're rats; we're the rats.mp3" controls autoplay>
+        <p>If you are reading this, it is because your browser does not support the audio element.</p>
+        </audio>
+    </div>
+    <div class="container">
+        
+        <div class="text-abs">
+            <p class="title">RATS</p>
+        </div>
+        <div class="shape-container">
+            <div id="triangle-down"></div>
+        </div>
+    </div>  
+    <div class="container2" class="hidden">
+        <div class="fill"></div>
+        <div class="ratpng">
+            <img src="ratstand.png">
+        </div>
+        <div class="text-container">
+            <h2 class="hidden">we're RATS</h2>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="text-container">
+            <h1 class="hidden">we're the</h1>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="text-container">
+            <h1 class="hidden"> RATS</h1>
+            <div class="ratpng">
+                <img class="hidden" src="ratright.png">
+            </div>
+        </div> 
+    </div>
+
+    <div class="container2">
+        <div class="text-container">
+            <h3 class="hidden">we pray</h3>
+        </div>  
+        <div class="fill"></div><div class="fill"></div> 
+    </div>
+    <div class="container2">
+        <div class="text-container">
+            <h3 class="hidden">at night</h3>
+        </div>   
+    </div>
+    <div class="container2">'
+        <div class="fill"></div>
+        <div class="fill"></div>
+        <div class="text-container">
+            <h3 class="hidden">we stalk</h3>
+        </div>   
+    </div>
+    <div class="container2">
+        <div class="text-container">
+            <h3 class="hidden">at night</h3>
+        </div>   
+    </div>
+    <div class="container2">
+        <div class="text-container">
+            <h3 class="hidden">we're</h3>
+        </div>   
+    </div>
+    <div class="container2">
+        <div class="text-container">
+            <h3 class="hidden">the</h3>
+        </div>   
+    </div>
+    <div class="container2">
+        <div class="text-container">
+            <div class="ratpng">
+                <img class="spin" src="ratstand.png">
+            </div>
+            <div class="title">RATS</div>
+            <div class="ratpng">
+                <img class="spin" src="ratstand.png">
+            </div>
+        </div>   
+    </div>
+
+<script>
+    (function() {
+  var elements;
+  var windowHeight;
+
+  function init() {
+    elements = document.querySelectorAll('.hidden');
+    windowHeight = window.innerHeight;
+  }
+
+  function checkPosition() {
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      var positionFromTop = elements[i].getBoundingClientRect().top;
+
+      if (positionFromTop - windowHeight <= 0) {
+        element.classList.add('fade-in');
+        element.classList.remove('hidden');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', checkPosition);
+  window.addEventListener('resize', init);
+
+  init();
+  checkPosition();
+})();
+
+</script>
+
+</body>
+</html>
