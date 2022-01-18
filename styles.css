@@ -8,8 +8,7 @@
 
 .container{
     padding-bottom:400px;
-    border-style: dashed;
-    border-color: white;
+
     height: auto;
     width: 100%;
     display: flex;
@@ -19,8 +18,7 @@
 }
 
 .container2{
-    border-style: dashed;
-    border-color: white;
+
     height: 600px;
     width: 100%;
     display: flex;
@@ -42,7 +40,7 @@
 }
 
 .fade-in {
-    animation: fade-in 3s;
+    animation: fade-in 1.5s;
 }
   
 @keyframes fade-in {
@@ -50,9 +48,7 @@
       to {opacity: 1;}
 }
 .text-container{
-    border-style: dashed;
-    border-color: rgb(147, 142, 170);
-    
+
     background-color: rgba(255, 255, 255, 0);
     text-align: center;
     height:fit-content;
@@ -64,8 +60,7 @@
 }
 
 .text-abs{
-    border-style: dashed;
-    border-color: rgb(147, 142, 170);
+
     padding-top: 200px;
     background-color: rgba(255, 255, 255, 0);
     height: fit-content;
@@ -108,8 +103,7 @@ h3{
 
 .shape-container{
     height: auto;
-    border-style: dashed;
-    border-color: rgb(172, 73, 73);
+
     position: static;
 }
 
@@ -146,6 +140,30 @@ h3{
    }
 }
 .ratpng:hover{
+    transform: rotate(360deg);
+    transition-property: transform;
+    transition-duration: .5s;
+    transform-origin: 30% 30%;
+}
+
+.ratpng2{
+    width: 300px;
+    background-color: transparent;
+}
+.ratpng2 img{
+    width: 100% ;
+    background-color: transparent;
+        animation:spin;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    transition:all .5s ease;
+}
+
+.ratpng2:hover{
     transform: rotate(360deg);
     transition-property: transform;
     transition-duration: .5s;
