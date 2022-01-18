@@ -7,7 +7,7 @@
 }
 
 .container{
-    padding-bottom:600px;
+    padding-bottom:400px;
     border-style: dashed;
     border-color: white;
     height: auto;
@@ -21,7 +21,7 @@
 .container2{
     border-style: dashed;
     border-color: white;
-    height: 900px;
+    height: 600px;
     width: 100%;
     display: flex;
     position: relative;
@@ -75,7 +75,7 @@
 }
 
 .title{
-    font-size: 600px;
+    font-size: 300px;
     font-weight: 800px;
     color: rgb(255, 255, 255);
     background-color: transparent;
@@ -83,7 +83,7 @@
 }
 
 h1{
-    font-size: 300px;
+    font-size: 150px;
     font-weight: 800px;
     color: rgb(255, 255, 255);
     background-color: transparent;
@@ -91,7 +91,7 @@ h1{
 }
 
 h2{
-    font-size: 200px;
+    font-size: 100px;
     font-weight: 800px;
     color: rgb(255, 255, 255);
     background-color: transparent;
@@ -99,7 +99,7 @@ h2{
 }
 
 h3{
-    font-size: 300px;
+    font-size: 150px;
     font-weight: 800px;
     color: rgb(255, 255, 255);
     background-color: transparent;
@@ -121,13 +121,13 @@ h3{
 	border-top: 1000px solid rgb(14, 33, 68);
 }
 .ratpng{
-    width: 1000px;
+    width: 500px;
     background-color: transparent;
 }
 .ratpng img{
     width: 100% ;
     background-color: transparent;
-    animation:spin;
+        animation:spin;
     animation-duration: .5s;
     animation-timing-function: linear;
     animation-delay: 0s;
@@ -153,7 +153,14 @@ h3{
 }
 
 .spin{
-
+    animation:spin;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    transition:all .5s ease;
 }
 .audio{
     margin-bottom: -100px;
